@@ -39,12 +39,16 @@ GameState.prototype.create = function() {
     pig2.scale.x = 0.05;
     pig2.scale.y = 0.05;
 
+    var pig3 = game.add.sprite(570,85,'pig');
+    pig3.scale.x = 0.05;
+    pig3.scale.y = 0.05;
+
     var vertical = game.add.sprite(485,195,'vertical');
 
     var horizontal1 = game.add.sprite(490,215,'horizontal');
     var horizontal2 = game.add.sprite(670,215,'horizontal');
 
-    var block = game.add.sprite(550,165,'block');
+    var block = game.add.sprite(550,115,'block');
 
     // Create an object pool of bullets
     this.bulletPool = this.game.add.group();
